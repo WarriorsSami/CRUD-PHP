@@ -1,0 +1,116 @@
+﻿/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	background-image: url('images/img10.jpg');
+	background-repeat: repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+}
+
+.form-div {
+	margin: 100px auto 50px;
+	padding: 25px 15px 10px 15px;
+	border: 1px solid #80ced7;
+	border-radius: 10px;
+	font-size: 1.1em;
+	font-family: 'Roboto', cursive;
+	background-color: whitesmoke;
+}
+
+.form-control:focus {
+	box-shadow: none;
+}
+
+form p {
+	font-size: .89em;
+}
+
+.form-div.login {
+	margin-top: 100px;
+}
+
+.logout {
+	color: red;
+}
+
+#message {
+	display: none;
+}
+
+.valid {
+	color: green;
+}
+  
+.valid:before {
+	position: relative;
+	left: -5px;
+	content: "✔";
+}
+  
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+	color: red;
+}
+  
+.invalid:before {
+	position: relative;
+	left: -5px;
+	content: "✖";
+}
+
+.content {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider-wrapper {
+	font-size: 40px;
+	color:#aaa;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider{
+	height: 50px;
+	padding-left:15px;
+	overflow: hidden;
+}
+
+.slider div {
+	color:#fff;
+	height: 50px;
+	margin-bottom: 50px;
+	padding: 2px 15px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.slider-text1 {
+	background: lightgreen;
+	animation: slide 5s linear infinite;
+}
+
+.slider-text2 {
+	background: skyblue;
+}
+
+.slider-text3 {
+	background: lightcoral;
+}
+
+@keyframes slide {
+	0% {margin-top:-300px;}
+	5% {margin-top:-200px;}
+	33% {margin-top:-200px;}
+	38% {margin-top:-100px;}
+	66% {margin-top:-100px;}
+	71% {margin-top:0px;}
+	100% {margin-top:0px;}
+}

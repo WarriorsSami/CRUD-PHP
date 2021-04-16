@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{all, compiled, font-awesome, holder, jquery, jquery-1.9.1, jquery-3.2.1.slim, popper, popper.js, toastr.js}" />
+  </component>
+</project>

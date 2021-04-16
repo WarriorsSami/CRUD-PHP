@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+    background-color: #777;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+  /*Import Google Fonts*/
+
+body {
+    background-image: url('../images/img10.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+  .form-div {
+    margin: 100px auto 50px;
+    padding: 25px 15px 10px 15px;
+    border: 1px solid #80ced7;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Roboto', cursive;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+
+  form p {
+    font-size: .89em;
+  }
+
+  .form-div.login {
+    margin-top: 100px;
+    background-image: linear-gradient(to left, rgba(21, 172, 66, 0.897), rgb(7, 93, 206));
+    font-weight: bolder;
+    color: black;
+  }
+
+  .logout {
+    color: red;
+  }
+
+  #message {
+    display: none;
+  }
+
+  .valid {
+    color: rgb(6, 75, 0);
+  }
+    
+  .valid:before {
+    position: relative;
+    left: -5px;
+    content: "✔";
+  }
+    
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: rgb(102, 0, 0);
+  }
+    
+  .invalid:before {
+    position: relative;
+    left: -5px;
+    content: "✖";
+  }
+
+  a {
+    font-weight: bolder;
+  }
+
+  form > p {
+    color: black;
+    font-weight: bolder;
+  }
+
+  .d-flex button {
+    margin: 1.5em 0.6em;
+    padding: 0.5em 1.5em;
+  }
+
+  .d-flex table {
+    margin: -1.5em;
+  }
+
+  .wide {
+    margin: -1.5em -4em;
+  }
+
+  .wide1 {
+    margin: -1.5em -3.9em -1.5em -1.9em;
+  }
+
+  .wide2 {
+    margin: -1.1em -3.9em -1.5em -1.9em;
+  }
+
+  table .btnedit {
+    color: lightsalmon;
+    cursor: pointer;
+  }
+
+  table .btndel {
+    color: tomato;
+    cursor: pointer;
+  }
+
+  .navbar-nav a {
+    margin: 0.4em 0.4em;
+    padding: 0.4em 0.4em;
+  }
+
+  .topnav-right {
+    float: right;
+  }
+
+  .content {
+    width: 800px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider-wrapper {
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider {
+    height: 50px;
+    padding-left:15px;
+    overflow: hidden;
+  }
+  
+  .slider div {
+    color:#fff;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  .slider-text1 {
+    background: seagreen;
+    animation: slide 5s linear infinite;
+  }
+  
+  .slider-text2 {
+    background: slateblue;
+  }
+  
+  .slider-text3 {
+    background: tomato;
+  }
+  
+  @keyframes slide {
+    0% {margin-top:-300px;}
+    5% {margin-top:-200px;}
+    33% {margin-top:-200px;}
+    38% {margin-top:-100px;}
+    66% {margin-top:-100px;}
+    71% {margin-top:0px;}
+    100% {margin-top:0px;}
+  }
+
+  .extend {
+      width: 700px;
+  }
+
+  ul a {
+    color: whitesmoke;
+  }
