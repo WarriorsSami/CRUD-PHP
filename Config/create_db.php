@@ -1,6 +1,15 @@
 <?php
 
-$mysql = mysqli_connect ("localhost", "root", "");
+require_once ('constants.php');
+
+$mysql = mysqli_init();
+mysqli_real_connect ($mysql,
+    HOSTNAME_SQL,
+    USERNAME_SQL,
+    PASSWORD_SQL,
+    DATABASE_SQL,
+    3306);
+
 if (!$mysql) {
 	echo "Nu s-a realizat conectarea la MySQL!";
 	exit (0);

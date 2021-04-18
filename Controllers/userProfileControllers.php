@@ -257,8 +257,6 @@
 
             $stmt->close ();
         }
-
-        $stmt->close ();
     }
 
     if (isset ($_POST['del'])) {

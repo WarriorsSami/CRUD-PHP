@@ -257,8 +257,6 @@ function deleteData () {
 
         $stmt->close ();
     } else $_SESSION['dempty'] = true;
-
-    $stmt->close ();
 }
 
 function deleteBtn () {

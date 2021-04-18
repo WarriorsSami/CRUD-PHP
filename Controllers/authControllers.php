@@ -2,8 +2,8 @@
 
 session_start ();
 
-require_once ("Config/create_db.php");
-require_once ("Config/create_dbit.php");
+# require_once ("Config/create_db.php");
+# require_once ("Config/create_dbit.php");
 require_once ("Config/create_connection_db.php");
 require_once ("emailControllers.php");
 
