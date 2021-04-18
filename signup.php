@@ -223,6 +223,17 @@
 <!-- Toastr Control Panel -->
 <script src="js_util/toastr.js"></script>
 
+<?php if (isset ($_SESSION['another-err'])) {
+    echo ("
+      <script>
+              $(document).ready (function () {
+                toastr.error ('".$_SESSION['another-err']."');
+              });
+      </script>
+    ");
+    unset ($_SESSION['another-err']);
+} ?>
+
 </body>
 
 </html>

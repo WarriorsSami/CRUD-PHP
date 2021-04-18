@@ -42,8 +42,7 @@ if (isset ($_POST['signup-btn'])) {
 	$stmt->execute ();
 	$result = $stmt->get_result ();
 	$userCount = $result->num_rows;
-	$stmt->close ();
-	
+
 	if ($userCount > 0) {
 		$errors['email'] = "Email already exists";
 	}
@@ -54,13 +53,13 @@ if (isset ($_POST['signup-btn'])) {
             $token = bin2hex(random_bytes(50));
         } catch (Exception $e) {
         }
-        $verified = false;
+        $verified = 0;
 		$admin = false;
 		
 		$sql = "INSERT INTO users (username, email, verified, token, password, admin) VALUES (?, ?, ?, ?, ?, ?)";
 		$stmt = $conn->prepare ($sql);
-		$stmt->bind_param ('ssbssb', $username, $email, $verified, $token, $password, $admin);
-		
+		$stmt->bind_param ('ssissi', $username, $email, $verified, $token, $password, $admin);
+
 		if ($stmt->execute ()) {
 			//login user
 			$user_id = $conn->insert_id;
@@ -81,6 +80,7 @@ if (isset ($_POST['signup-btn'])) {
 			$errors['db_error'] = "Database error: failed to register";
 		}
 	}
+	//$_SESSION['another-err'] = $stmt->error;
 }
 
 
