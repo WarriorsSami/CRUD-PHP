@@ -503,14 +503,15 @@ checkUser ();?>
     ");} ?>
 
 <?php if (isset ($_SESSION['dfail'])) {
-    unset ($_SESSION['dfail']);
     echo ("
       <script>
               $(document).ready (function () {
                 toastr.error ('User deletion failed');
               });
       </script>
-    ");} ?>
+    ");
+    unset ($_SESSION['dfail']);
+} ?>
 
 <?php if (isset ($_SESSION['denied-perm'])) {
     unset ($_SESSION['denied-perm']);
