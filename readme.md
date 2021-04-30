@@ -1,4 +1,4 @@
-## CRUD WEB Application for IT company
+## CRUD WEB Application for IT company using PHP and Bootstrap
 
 ### Acest folder cuprinde o aplicație web bazată de modelul CRUD și realizată pentru a facilita gestionarea bazei de date a unei firme IT.
 ### Backend-ul este realizat în plain PHP, iar frontend-ul folosește framework-ul CSS Bootstrap.
